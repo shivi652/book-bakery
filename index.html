@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Bookmark Bakery</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>🍰 Bookmark Bakery</h1>
+    <div>
+      <button id="about-btn" title="About this app">❤️</button>
+      <button id="theme-toggle">Toggle Theme</button>
+    </div>
+  </header>
+
+  <!-- Search Bar -->
+  <div class="search-bar">
+    <input type="text" id="search-input" placeholder="Search pastries by title..." autocomplete="off" />
+  </div>
+
+ 
+
+  <!-- Chef’s Special (Favorites) Showcase -->
+  <section id="showcase" class="showcase">
+    <h2>Chef’s Special</h2>
+    <div class="sheet" id="showcase-sheet"></div>
+  </section>
+
+  <!-- Flavor Filter Tabs -->
+  <nav class="tabs" id="tabs"></nav>
+
+  <!-- Counter View (All Pastries) -->
+  <section class="sheet" id="sheet"></section>
+
+  <!-- About Modal -->
+  <div id="about-modal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <span class="close" id="close-about">&times;</span>
+      <h2>About Bookmark Bakery</h2>
+      <p>
+        Welcome to <b>Bookmark Bakery</b>!<br>
+        Collect, favorite, and discover books as delicious pastries.<br>
+        Double-click a card to start a baking timer. Click the heart to add to Chef’s Special!
+      </p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <span>Made with <span style="color:#ffb3d0;">&#10084;</span> at the Bookmark Bakery</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
